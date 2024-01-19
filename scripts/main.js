@@ -79,7 +79,7 @@ $(document).ready(function () {
     function getConsultation() {
         $('html, body').animate({
             scrollTop: order.offset().top
-        }, 4000);
+        }, 3000);
     }
 
     $('.phone-call').on('click', getConsultation);
@@ -125,16 +125,12 @@ $(document).ready(function () {
 
     menuItemTechnologies.on('click', () => {
         menuItemAddActive(menuItemTechnologies);
-        $('html, body').animate({
-            scrollTop: $('.technologies').offset().top
-        }, 3000);
+        $('.technologies')[0].scrollIntoView({behavior: "smooth"});
     });
 
     menuItemTerms.on('click', () => {
         menuItemAddActive(menuItemTerms);
-        $('html, body').animate({
-            scrollTop: $('.terms').offset().top
-        }, 4000);
+        $('.terms')[0].scrollIntoView({behavior: "smooth"});
     });
 
     menuItemFeedback.on('click', () => {
