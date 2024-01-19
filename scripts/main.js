@@ -79,7 +79,7 @@ $(document).ready(function () {
     function getConsultation() {
         $('html, body').animate({
             scrollTop: order.offset().top
-        }, 2000);
+        }, 1000);
     }
 
     $('.phone-call').on('click', getConsultation);
